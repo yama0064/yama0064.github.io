@@ -38,11 +38,15 @@ nav ul{
 }
 
 nav a {
+    text-decoration: none;
     border: black;
-    border-style: dotted;   
+    border-style:double;   
     background-color: white;
+    padding: 3px 5px;
+    color: black;
+    margin-right: 5px;
 }
 
 nav a:hover {
-    background-color: yellow;
+    background-color: orange;
 }
