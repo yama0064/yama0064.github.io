@@ -48,3 +48,100 @@ table {
 }
 
 /* ===== My CSS Code ====== */
+
+body{
+	background-color:#aad4cf ;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 0 16.66%;  /* Adds 16.66% padding to the left and right */
+    box-sizing: border-box;  /* Ensures padding is included in the body's width calculation */
+}
+
+main{ background-color:#d4e9e7;}
+
+.header-img{
+	width: 100%;
+
+}
+
+header{
+	position: relative;
+	text-align: center;
+}
+
+header h1{
+	color:white;
+	font-size: 50px;
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.nav-list {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin:0;
+    display: flex; /* Make the list horizontal */
+    justify-content: space-between; /* Space items evenly */
+    text-align: center; /* Center text within each item */
+    width: 100%; /* Make the navigation span the entire width of the body */
+}
+
+.nav-list li {
+    flex: 1; /* Make each item take up equal space */
+    position: relative;
+}
+
+.nav-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0; /* Position the line on the right edge of the item */
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%; /* Height of the line */
+    width: 1px; /* Width of the line */
+    background-color: black; /* Color of the line */
+}
+
+h2{
+    margin-top: 20px;  /* Adds space above the h2 */
+    margin-bottom: 10px; /* Adds space below the h2 */
+	font-size:20px;
+}
+
+article{
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 20px; /* Space between the image and paragraph */
+	font-size: 15px;
+}
+
+.square-img{
+	width: 25%;
+	height: auto;
+	margin-left:10px;
+}
+
+h3{
+font-size: 20px;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+.facts ul{
+	list-style-type: disc; 
+	margin-left: 15px;
+}
+
+h4{
+	font-size: 20px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+
+.form {
+    border: 2px solid black; /* Border width, style, and color */
+    border: radius 0; /* Optional: rounded corners */
+    padding: 20px; /* Space between the border and the form elements */
+    margin: 20px; /* Optional: space around the form */
+}
