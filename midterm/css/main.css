@@ -70,7 +70,7 @@ header{
 
 header h1{
 	color:white;
-	font-size: 50px;
+	font-size: 5rem;
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -99,44 +99,51 @@ header h1{
     top: 50%;
     transform: translateY(-50%);
     height: 60%; /* Height of the line */
-    width: 1px; /* Width of the line */
+    width: 2px; /* Width of the line */
     background-color: black; /* Color of the line */
 }
 
 h2{
-    margin-top: 20px;  /* Adds space above the h2 */
-    margin-bottom: 10px; /* Adds space below the h2 */
-	font-size:20px;
+    margin-top: 0.5rem;  /* Adds space above the h2 */
+    margin-bottom: 0.5rem;/* Adds space below the h2 */
+	margin-left: 1rem;
+	font-size:2rem;
 }
 
 article{
-    display: flex;
-    align-items: flex-start; /* Aligns items at the top */
-    gap: 20px; /* Space between the image and paragraph */
-	font-size: 15px;
+	margin-top: 1rem;
+	font-size: 1.2rem;
 }
+
 
 .square-img{
 	width: 25%;
 	height: auto;
-	margin-left:10px;
+	margin:1rem;
+	float: left;
 }
 
 h3{
-font-size: 20px;
+font-size:2rem;
 margin-top:20px;
 margin-bottom:10px;
 }
 
+.facts{
+	margin-left: 1rem;
+}
 .facts ul{
+	font-size:1.2rem;
 	list-style-type: disc; 
-	margin-left: 15px;
+	margin-left: 1rem;
 }
 
 h4{
-	font-size: 20px;
-	margin-top:20px;
-	margin-bottom:10px;
+	font-size: 2rem;
+	margin-top:1rem;
+	margin-bottom:1rem;
+	margin-left: 1rem;
+
 }
 
 .form {
@@ -144,4 +151,10 @@ h4{
     border: radius 0; /* Optional: rounded corners */
     padding: 20px; /* Space between the border and the form elements */
     margin: 20px; /* Optional: space around the form */
+	font-size: 1.5rem;
 }
+
+.form #question{
+	font-size: 1.75vw;
+}
+
