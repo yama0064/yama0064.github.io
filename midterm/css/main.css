@@ -56,7 +56,10 @@ body{
     box-sizing: border-box;  /* Ensures padding is included in the body's width calculation */
 }
 
-main{ background-color:#d4e9e7;}
+main{ 
+	background-color:#d4e9e7;
+	margin-bottom: 1rem;
+}
 
 .header-img{
 	width: 100%;
@@ -70,7 +73,7 @@ header{
 
 header h1{
 	color:white;
-	font-size: 5rem;
+	font-size: 3rem;
 	position: absolute;
 	top: 65%;
 	left: 50%;
@@ -85,6 +88,7 @@ header h1{
     justify-content: space-between; /* Space items evenly */
     text-align: center; /* Center text within each item */
     width: 100%; /* Make the navigation span the entire width of the body */
+	font-size: 1.4rem;
 }
 
 .nav-list li {
@@ -99,20 +103,19 @@ header h1{
     top: 50%;
     transform: translateY(-50%);
     height: 60%; /* Height of the line */
-    width: 2px; /* Width of the line */
+    width: 1px; /* Width of the line */
+	height:1.5rem;
     background-color: black; /* Color of the line */
 }
 
 h2{
-    margin-top: 0.5rem;  /* Adds space above the h2 */
-    margin-bottom: 0.5rem;/* Adds space below the h2 */
+    margin-top: 1rem;  /* Adds space above the h2 */
 	margin-left: 1rem;
 	font-size:2rem;
 }
 
 article{
-	margin-top: 1rem;
-	font-size: 1.2rem;
+	font-size: 1.15rem;
 }
 
 
@@ -141,20 +144,26 @@ margin-bottom:10px;
 h4{
 	font-size: 2rem;
 	margin-top:1rem;
-	margin-bottom:1rem;
 	margin-left: 1rem;
 
 }
 
 .form {
     border: 2px solid black; /* Border width, style, and color */
-    border: radius 0; /* Optional: rounded corners */
-    padding: 20px; /* Space between the border and the form elements */
+	padding: 20px; /* Space between the border and the form elements */
     margin: 20px; /* Optional: space around the form */
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 }
 
 .form #question{
-	font-size: 1.75vw;
+	font-size: 1.5rem;
 }
 
+#send{
+	background-color:#d4e9e7;
+}
+
+#footer{ 
+	padding:1rem;
+	text-align:right;
+}
