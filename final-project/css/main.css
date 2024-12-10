@@ -49,44 +49,187 @@ table {
 
 /* ====== MyCSS ====== */
 
+html {
+    box-sizing: border-box;
+    max-width: 760px;
+    margin: auto;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.5rem;
+    padding:1rem;
+}
 
 header {
     background-color:#222;
 }
 
-#home{
+.home{
     background-color: #c78c06;
-    color: #222;
+}
+nav img{
+    width: 10%;
+    display:flex;
+    background-color: #c78c06;
 }
 
-@media screen and(max-width: 760px){
-    header{
-        background-color: #222;
-    }
-
-    .nav-list{
-        display:flex;
-        justify-content: center;
-    }
-
-
+.topnav nav{
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-list{
+    text-decoration: none;
+    color:#c78c06;
+    font-weight: 400;
+    font-size: 18px;
 }
 
-.welcome h1{
+
+#home {
+    color:#222;
+    background-color: #c78c06;
+    display: block;
+    width: auto;
+}
+
+nav ul li{
+    padding: 1rem;
+}
+
+.search {
+    margin:1rem;
+    text-align: left;
+    display: flex;
+}
+
+#search-bar{
+    height:25px; 
+    margin:0; 
+    padding:10px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: left;
+}
+
+#search-button{
+    text-align: center;
+    margin:0;
+    width:50px;
+    height:50px;
+    font-size: 25px;
+    color: #c78c06;
+    border-color: #c78c06;
+    background-color: #222;
+}
+
+.welcome {
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    position: relative;
+}
+.welcome-p{
+    position: absolute;
+    top: 1%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    margin: 50px 0px;
+}
+
+.welcome-p {
     color: white;
-    font-size: 40px;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 5rem 1rem;
+}
+
+h1 {
+    font-size:4rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    line-height: 6rem;
+}
+.welcome p {
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .connect-button{
+    width: 35%;
+    height: 28%;
+    padding: 1rem;
+    font-size: 20px;
+    color: #222;
     background-color: #c78c06;
-    padding: 5px 5px;
+    border: none;
 }
 
 .aboutus{
-    background-color: #ffe6ac;
+    background: #ffe6ac;
+    max-width: 760px;
+    width:auto;
+}
+
+.aboutus img{
+    align-items: center;
+    width:96%;
+    padding: 1rem;
 }
 
 .main-header{
-    font-size: 25px;
-    padding: 5px 0;
+    font-size: 50px;
+    padding: 1rem;
+    height:auto;
+    font-weight: bold;
+}
+
+.main-header{
+    font-size: 45px;
+    padding: 1rem;
+    height:auto;
+    font-weight: bold;
+}
+
+.sub-header{
+    font-size: 30px;
+    padding: 1rem;
+    height:auto;
+    font-weight: bold;
+}
+
+.servises{
+    background: #ffe6ac;
+    padding-top: 0; 
+    margin-top: 1rem;
+}
+
+.servises img{
+    width: 100%;
+    height: auto;
+    padding:0;
+    margin:0;
+}
+
+.servises button{
+    width: 30vw;
+    height: 10vh;
+    margin: 1rem;
+    font-size: 20px; 
+    color: white;
+    background-color: #222;
+    border: none;
 }
