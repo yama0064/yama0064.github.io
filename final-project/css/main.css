@@ -178,7 +178,7 @@ h1 {
     border: none;
 }
 
-.aboutus{
+.aboutus, .teammates{
     background: #ffe6ac;
     max-width: 760px;
     width:auto;
@@ -217,7 +217,7 @@ h1 {
     margin-top: 1rem;
 }
 
-.servises img{
+.servises img, .teammates img{
     width: 100%;
     height: auto;
     padding:0;
@@ -232,4 +232,115 @@ h1 {
     color: white;
     background-color: #222;
     border: none;
+}
+
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 315px;
+    /* position: relative; */
+    color: white;
+    margin-top: 3rem;
+}
+
+.vision h2{
+    padding-top: 3rem;
+}
+
+.vision button{
+    width: 30vw;
+    height: 10vh;
+    margin: 1rem;
+    font-size: 20px; 
+    color: white;
+    background-color: #222;
+    border: solid #c78c06;
+}
+
+.team h3{
+    font-weight: bold;
+    padding-left: 1rem;
+}
+
+.bob{
+    margin-top: 1rem;
+}
+
+.line{
+    width:98%;
+    height: 0;
+    border: 1px solid #c78c06;
+    margin:0.5rem;
+    display:inline-block;
+}
+
+.contactus {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+#fname, #email {
+    padding: 10px;
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+    border: 0.1pt solid #222;
+    border-radius: 2px;
+    width: 90%;
+}
+
+#message {
+    padding: 75px;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    border: 0.1pt solid #222;
+    border-radius: 2px;
+    width: 72.5%;
+}
+
+#send {
+    background-color: #222;
+    color:#c78c06;
+    border: none;
+    font-size: 18px;
+    width:min-content;
+    height:min-content;
+}
+
+.form{
+    max-width: 760px;
+    width: 100vw;
+    margin: 1rem;
+}
+
+.table{
+    padding: 1rem;
+}
+
+table, td, th {
+    border: 1px solid black;
+    width: 60%;
+    padding: 1rem;
+ }
+
+table {
+    width: 100%;
+}
+  
+th {
+    padding-bottom: 0;
+    height: 50px;
+    background:#ffe6ac;
+}
+
+.location iframe{
+    height: 500px;
+    width: 100%;
+}
+
+footer {
+    background-color: #222;
+    color: #c78c06;
+    padding-top: 1rem;
 }
