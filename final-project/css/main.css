@@ -49,6 +49,8 @@ table {
 
 /* ====== MyCSS ====== */
 
+/* General style */
+
 * {
     box-sizing: border-box;
     max-width: 760px;
@@ -65,6 +67,8 @@ p{
     line-height: 1.5rem;
     padding:1rem;
 }
+
+/* Header */
 
 header {
     background-color:#222;
@@ -180,6 +184,8 @@ h1 {
     border: none;
 }
 
+/* About Us (first grid) */
+
 .aboutus, .teammates{
     background: #ffe6ac;
     max-width: 760px;
@@ -236,6 +242,8 @@ h1 {
     border: none;
 }
 
+/* Vision */
+
 .vision {
     background-image: url("../images/vision.jpg");
     background-repeat: no-repeat;
@@ -260,6 +268,8 @@ h1 {
     background-color: #222;
     border: solid #c78c06;
 }
+
+/* Second grid */
 
 .team h3{
     font-weight: bold;
@@ -338,6 +348,8 @@ th {
     width: 100%;
 }
 
+/* Footer */
+
 footer {
     background-color: #222;
     color: #c78c06;
@@ -347,6 +359,8 @@ footer {
 .vision {
     overflow: hidden; /* Ensures no extra spacing from overflow */
 }
+
+/* Screen size */
 
 @media screen and (min-width: 760px) {
     *{
@@ -487,6 +501,9 @@ footer {
 
     }
 
+    .services{
+        background-color: #ffe6ac;
+    }
     .our-service{
         margin: 0; /* Removes any margin */
         padding: 0; /* Removes any padding */
@@ -494,8 +511,8 @@ footer {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-gap: 0.5rem;
-        padding-bottom:0;
+        grid-gap:10px;
+        height: 165vh;
     }  
     
     .digital{
@@ -663,3 +680,5 @@ footer {
     }
 
 }
+
+/* I don't know how to remove the space below grid (crying) */
