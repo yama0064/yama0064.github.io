@@ -101,7 +101,7 @@ nav img{
     color:#222;
     background-color: #c78c06;
     display: block;
-    width: auto;
+    width: fit-content;
 }
 
 nav ul li{
@@ -362,6 +362,10 @@ footer {
         line-height: normal;
     }
 
+    section{
+        margin: 0;
+        padding:0;
+    }
     div{
         display: flex;
     }
@@ -408,12 +412,26 @@ footer {
         background-color: #222;
     }
 
-    #home{
-        width:80px;
-        height: 20px;
-        margin-right:0;
-        margin-left:1rem;
+#home {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Ensure text is centered */
+    width: 40%;
+    margin: 1rem 2rem 0 3rem; /* Keep your existing margins */
+    list-style: none;
+    padding: 1rem;
+    background-color: #c78c06;
+}
+
+    #home li {
+        padding: 1rem;
+        width: 100%; /* Ensure full width for proper alignment */
+        text-align: center; /* Center text */
     }
+
+
 
     .navigation{
         list-style: none;
@@ -431,10 +449,12 @@ footer {
 
     .search {
         margin-top:2rem;
+        margin-right:3rem;
     }
 
     #search-bar{
-        width: 200px;
+        width: 250px;
+        height:100%;
     }
 
     .welcome-p{
