@@ -49,7 +49,7 @@ table {
 
 /* ====== MyCSS ====== */
 
-html {
+* {
     box-sizing: border-box;
     max-width: 760px;
     margin: auto;
@@ -79,15 +79,17 @@ nav img{
     background-color: #c78c06;
 }
 
-.topnav nav{
-    background-color: #222;
+.topnav ul{
     text-align: center;
     padding: 1rem;
     padding-top: 0;
     text-decoration: none;
     font-size: 17px;
 }
-.nav-list{
+#nav-list ul{
+    background-color: #222;
+}
+#nav-list{
     text-decoration: none;
     color:#c78c06;
     font-weight: 400;
@@ -211,20 +213,20 @@ h1 {
     font-weight: bold;
 }
 
-.servises{
+.services{
     background: #ffe6ac;
     padding-top: 0; 
     margin-top: 1rem;
 }
 
-.servises img, .teammates img{
+.services img, .teammates img{
     width: 100%;
     height: auto;
     padding:0;
     margin:0;
 }
 
-.servises button{
+.services button{
     width: 30vw;
     height: 10vh;
     margin: 1rem;
@@ -242,7 +244,7 @@ h1 {
     height: 315px;
     /* position: relative; */
     color: white;
-    margin-top: 3rem;
+    margin-top:1rem;
 }
 
 .vision h2{
@@ -276,10 +278,7 @@ h1 {
     display:inline-block;
 }
 
-.contactus {
-    padding: 1rem;
-    padding-top: 2rem;
-}
+
 
 #fname, #email {
     padding: 10px;
@@ -287,7 +286,7 @@ h1 {
     margin-bottom:1rem;
     border: 0.1pt solid #222;
     border-radius: 2px;
-    width: 90%;
+    width: 100%;
 }
 
 #message {
@@ -296,7 +295,7 @@ h1 {
     margin-bottom:1rem;
     border: 0.1pt solid #222;
     border-radius: 2px;
-    width: 72.5%;
+    width: 75%;
 }
 
 #send {
@@ -343,4 +342,304 @@ footer {
     background-color: #222;
     color: #c78c06;
     padding-top: 1rem;
+}
+
+.vision {
+    overflow: hidden; /* Ensures no extra spacing from overflow */
+}
+
+@media screen and (min-width: 760px) {
+    *{
+        box-sizing: border-box;
+        max-width: 1200px;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 15px;
+        line-height: normal;
+    }
+
+    div{
+        display: flex;
+    }
+
+
+    .logo-img {
+        width: 75px; 
+        height: 75px;
+        align-content: center;
+        margin-top: 1rem;
+        margin-left:4rem;
+    }
+
+    .topnav{
+        display: flex;
+        height:80px;
+        background-color: #222;
+        width: 100%;
+    }
+
+    #nav-list{
+        padding-left:0;
+        padding-right:0;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    #nav-list li {
+        margin:0;
+        padding-left: 0;
+    }
+
+    #nav-list li:nth-child(1), #nav-list li:nth-child(2), #nav-list li:nth-child(3){
+        padding-right: 3rem;
+    }
+
+    #nav-list li:nth-child(4){
+        padding: 1rem 0;
+    }
+
+    .home{
+        display: flex;
+        align-content: center;
+        background-color: #222;
+    }
+
+    #home{
+        width:80px;
+        height: 20px;
+        margin-right:0;
+        margin-left:1rem;
+    }
+
+    .navigation{
+        list-style: none;
+        margin-bottom:1rem;
+        padding: 30px;
+        display: flex;
+    }
+
+    .navigation ul{
+        list-style: none;
+        margin: 0;
+        padding:2rem;
+        display: flex;
+    }
+
+    .search {
+        margin-top:2rem;
+    }
+
+    #search-bar{
+        width: 200px;
+    }
+
+    .welcome-p{
+        margin: 50px 100px;
+    }
+
+    .connect-button{
+        width:25%;
+        height:30%;
+    }
+
+    .aboutus {
+        height: 320px;
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 10%;
+      }
+
+    .aboutus {
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+    }
+
+    .aboutus img {
+        float: left;
+        max-width: 50%;
+        width:50%;
+        padding: 1rem;
+
+    }
+
+    .our-service{
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 0.5rem;
+        padding-bottom:0;
+    }  
+    
+    .digital{
+        grid-column: 1/4;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+     }
+
+    .marketing{
+        grid-column: 4/7;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+    .video{
+        grid-column: 1/3;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+    .web-dev{
+        grid-column: 3/5;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+    .print{
+        grid-column: 5/7;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+
+    .our-service button{
+        width:90%;
+        padding:1rem;
+    }
+
+    .video, .web-dev, .print{
+        height:80%;
+        margin:0;
+        padding:0;
+        margin-bottom:0;
+        padding-bottom: 0;
+    }
+
+    .vision{
+        vertical-align: top;
+        padding:0;
+        margin:0;
+        height:30%;
+    }
+
+    .john-img, .bob-img {
+        display: block;
+        background-color: #ffe6ac;
+    }
+
+    .teammates p{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .team{
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .john-img{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .john{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .bob{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .bob-img{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .bob{
+        margin-top: 0;
+    }
+
+    .contactus{
+        max-width: 40vw;
+        margin:0;
+        padding:0;
+    }
+    .fname, .email{
+        font-size: 1rem;
+        margin-bottom: 8px;
+        display: block; /* Ensures labels appear on their own line */
+    }
+
+    #fname, #email{
+        max-width:600px;
+        width:35vw;
+    }
+
+    .message{
+        display: block;
+    }
+
+    #message{
+        max-width:1200px;
+        width: 35vw;
+        height:20vh;
+        padding:0;
+        margin:0;
+    }
+
+    #send {
+        padding: 0.5rem;
+        font-size: 28px;
+        color:#c78c06;
+        background-color: #222;
+        border: none;
+        width: fit-content;
+    }
+
+    .info{
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .contactus{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+
+    .location{
+        margin-right:2rem;
+        grid-column: 2/3;
+        grid-row:1/2;
+        max-width:600px;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+
+    .table{
+        grid-column: 1/3;
+        grid-row: 2/3;
+        width:100vw;
+        max-width:1200px;
+        margin: 0; /* Removes any margin */
+        padding: 0; /* Removes any padding */
+    }
+
+    .location iframe{
+        width: 35vw;
+        height:50vh;
+    }
+
 }
